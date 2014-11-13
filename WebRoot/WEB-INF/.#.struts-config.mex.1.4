@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/houseType.do" location="50,50" dimension="188,88" />
+  <StrutsActivity path="/areaType.do" location="555,300" dimension="175,88" />
+  <StrutsActivity path="ShowHouse_type.jsp" location="50,250" dimension="131,49" />
+  <StrutsActivity path="/AddhouseType.jsp" location="950,50" dimension="123,49" />
+  <StrutsActivity path="/houseType.jsp" location="350,250" dimension="104,49" />
+  <StrutsActivity path="/Areaht.jsp" location="650,150" dimension="84,49" />
+  <StrutsActivity path="/form/houseType.jsp" location="435,45" dimension="130,49" />
+  <StrutsActivity path="/ShowHouse_type.jsp" location="660,45" dimension="135,61" />
+  <StrutsActivity path="/areaType.jsp" location="950,150" dimension="97,49" />
+  <StrutsTransition id="/houseType.do,Add,/AddhouseType.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="144,50" />
+      <AbsolutePoint location="144,-25" />
+      <AbsolutePoint location="1011,-25" />
+      <AbsolutePoint location="1011,50" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/houseType.do,ShowHouse,ShowHouse_type.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="144,138" />
+      <AbsolutePoint location="144,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/areaType.do,ok,/Areaht.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="665,300" />
+      <AbsolutePoint location="665,199" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/houseType.jsp,null,/houseType.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="402,250" />
+      <AbsolutePoint location="402,114" />
+      <AbsolutePoint location="238,114" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

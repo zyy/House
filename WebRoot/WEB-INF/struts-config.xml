@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    
+	
+    <form-bean name="adminForm" type="struts.form.AdminForm" />
+    <form-bean name="houseTypeForm" type="struts.form.HouseTypeForm" />
+	
+	<form-bean name="actTableForm" type="struts.form.ActTableForm" />
+	
+	<form-bean name="areaTypeForm" type="struts.form.AreaTypeForm" />
+    <form-bean name="begRentForm" type="struts.form.BegRentForm" />
+    <form-bean name="usersForm" type="struts.form.UsersForm" />
+    <form-bean name="chooseRoomForm" type="struts.form.ChooseRoomForm" />
+    <form-bean name="leaseRoomForm" type="struts.form.LeaseRoomForm" />
+    <form-bean name="usersInfoForm" type="struts.form.UsersInfoForm" />
+  </form-beans>
+
+
+
+  <global-exceptions />
+  <global-forwards>
+   
+  </global-forwards>
+  <action-mappings >
+    
+     <action
+      attribute="areaTypeForm" 
+      name="areaTypeForm"
+      parameter="method"
+      path="/areaType"
+      scope="request"
+      type="struts.action.AreaTypeAction" >
+      
+      <forward name="ok" path="/Areaht.jsp"></forward>
+   	   <forward name="isnu" path="/index.jsp"></forward>
+   	
+      </action>
+    <action
+      attribute="adminForm"
+      name="adminForm"
+      parameter="method"
+      path="/admin"
+      scope="request"
+      type="struts.action.AdminAction">
+      <forward name="loginok" path="/htindex.jsp"></forward>
+      <forward name="look" path="/SelAdmin.jsp"></forward>
+      <forward name="login" path="/adminLogin.jsp"></forward>
+      </action>
+
+
+    <action
+      attribute="houseTypeForm"
+      name="houseTypeForm"
+      parameter="method"
+      path="/houseType"
+      scope="request"
+      type="struts.action.HouseTypeAction" >
+      
+      <forward name="show" path="/ShowHouse_type.jsp"></forward>
+      </action>
+      
+    <action
+      attribute="begRentForm"
+      name="begRentForm"
+      parameter="method"
+      path="/begRent"
+      scope="request"
+      type="struts.action.BegRentAction"
+      validate="false" >
+		<forward name="qiuzu" path="/userqz.jsp"></forward>
+		<forward name="showbr" path="/begRent.jsp"></forward>
+		<forward name="up" path="/userupdate.jsp"></forward>
+		<forward name="show" path="/qzindex.jsp"></forward>
+		<forward name="showinfo" path="/qzinfo.jsp"></forward>
+      </action>
+      
+    <action
+      attribute="usersForm"
+      name="usersForm"
+      parameter="method"
+      path="/users"
+      scope="request"
+      type="struts.action.UsersAction"
+      validate="false" >
+      <forward name="usok" path="/user.jsp"></forward>
+      <forward name="login" path="/userLogin.jsp"></forward>
+      <forward name="update" path="update_pwd.jsp"></forward>
+      <forward name="index" path="/index.jsp"></forward>
+      <forward name="show" path="/showUsers.jsp"></forward>
+      <forward name="showinfo" path="/showUinfo.jsp"></forward>
+      </action>
+      
+    <action
+      attribute="leaseRoomForm"
+      name="leaseRoomForm"
+      parameter="method"
+      path="/leaseRoom"
+      scope="request"
+      type="struts.action.LeaseRoomAction"
+      validate="false">
+      <forward name="ok" path="/usercz.jsp"></forward>
+      <forward name="show" path="/room.jsp"></forward>
+      <forward name="info" path="/roomInfo.jsp"></forward>
+      <forward name="index" path="/index.jsp"></forward>
+      <forward name="update" path="/updateRoom.jsp"></forward>
+      <forward name="showroom" path="/showroom.jsp"></forward>
+      </action>
+
+    <action
+      attribute="usersInfoForm" 
+      name="usersInfoForm"
+      parameter="method"
+      path="/usersInfo"
+      scope="request"
+      type="struts.action.UsersInfoAction">
+      <forward name="usersInfo" path="/userInfo.jsp"></forward>
+       <forward name="user" path="/user.jsp"></forward>
+      
+      </action>
+      
+      
+     <action
+      attribute="actTableForm" 
+      name="actTableForm"
+      parameter="method"
+      path="/actTable"
+      scope="request"
+      type="struts.action.ActTableAction">
+      <forward name="rep" path="/report.jsp"></forward>
+      <forward name="showLessInfo" path="/actInfo.jsp"></forward>
+      
+      </action>
+      
+
+    <action
+      attribute="chooseRoomForm"
+      input="/form/chooseRoom.jsp"
+      name="chooseRoomForm"
+      parameter="method"
+      path="/chooseRoom"
+      scope="request"
+      type="struts.action.ChooseRoomAction" >
+      <forward name="show" path="/chooseroom.jsp"></forward>
+      </action>
+
+   </action-mappings>
+
+  <message-resources parameter="struts.ApplicationResources" />
+</struts-config>
+

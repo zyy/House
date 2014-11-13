@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/areaType.do" location="50,50" dimension="214,84" />
+  <StrutsActivity path="/admin.do" location="350,50" dimension="196,84" />
+  <StrutsActivity path="/houseType.do" location="650,50" dimension="220,84" />
+  <StrutsActivity path="/begRent.do" location="950,50" dimension="208,84" />
+  <StrutsActivity path="/users.do" location="50,250" dimension="196,84" />
+  <StrutsActivity path="/leaseRoom.do" location="350,250" dimension="220,84" />
+  <StrutsActivity path="/usersInfo.do" location="1250,150" dimension="181,88" />
+  <StrutsActivity path="/actTable.do" location="950,950" dimension="201,104" />
+  <StrutsActivity path="/chooseRoom.do" location="650,250" dimension="226,84" />
+  <StrutsActivity path="/Areaht.jsp" location="50,450" dimension="106,48" />
+  <StrutsActivity path="/index.jsp" location="350,450" dimension="100,48" />
+  <StrutsActivity path="/adminLogin.jsp" location="1550,1050" dimension="125,53" />
+  <StrutsActivity path="/SelAdmin.jsp" location="650,450" dimension="118,48" />
+  <StrutsActivity path="/htindex.jsp" location="950,450" dimension="112,48" />
+  <StrutsActivity path="/ShowHouse_type.jsp" location="50,550" dimension="154,48" />
+  <StrutsActivity path="/begRent.jsp" location="1250,350" dimension="92,49" />
+  <StrutsActivity path="/qzinfo.jsp" location="1550,650" dimension="93,53" />
+  <StrutsActivity path="/userupdate.jsp" location="1550,250" dimension="106,49" />
+  <StrutsActivity path="/userqz.jsp" location="350,550" dimension="106,48" />
+  <StrutsActivity path="/qzindex.jsp" location="1550,350" dimension="88,49" />
+  <StrutsActivity path="update_pwd.jsp" location="1250,450" dimension="124,48" />
+  <StrutsActivity path="/userLogin.jsp" location="350,750" dimension="97,49" />
+  <StrutsActivity path="/user.jsp" location="650,550" dimension="94,48" />
+  <StrutsActivity path="/roomInfo.jsp" location="650,750" dimension="95,49" />
+  <StrutsActivity path="/updateRoom.jsp" location="950,550" dimension="130,48" />
+  <StrutsActivity path="/usercz.jsp" location="50,650" dimension="106,48" />
+  <StrutsActivity path="/showroom.jsp" location="650,950" dimension="119,53" />
+  <StrutsActivity path="/room.jsp" location="650,650" dimension="94,48" />
+  <StrutsActivity path="/userInfo.jsp" location="350,950" dimension="105,53" />
+  <StrutsActivity path="/report.jsp" location="50,750" dimension="94,53" />
+  <StrutsActivity path="/actInfo.jsp" location="50,1050" dimension="97,53" />
+  <StrutsActivity path="/chooseroom.jsp" location="1550,550" dimension="130,48" />
+  <StrutsActivity path="/form/chooseRoom.jsp" location="950,650" dimension="160,48" />
+  <StrutsActivity path="/LessInfo.jsp" location="1250,950" dimension="105,53" />
+  <StrutsActivity path="user.jsp" location="1550,850" dimension="77,53" />
+  <StrutsActivity path="userInfo.jsp" location="350,850" dimension="88,49" />
+  <StrutsActivity path="/1.jsp" location="350,650" dimension="76,48" />
+  <StrutsActivity path="AdduserInfo.jsp" location="1250,550" dimension="107,49" />
+  <StrutsActivity path="showUserinfo.jsp" location="1250,650" dimension="112,49" />
+  <StrutsActivity path="updateupwd" location="950,750" dimension="89,49" />
+  <StrutsActivity path="updatePwd.jsp" location="1250,750" dimension="101,49" />
+  <StrutsActivity path="" location="650,850" dimension="29,49" />
+  <StrutsActivity path="regUsers.jsp" location="950,850" dimension="90,49" />
+  <StrutsActivity path="chooseroom.jsp" location="50,950" dimension="124,48" />
+  <StrutsActivity path="/" location="1250,850" dimension="46,48" />
+  <StrutsActivity path="/showUsers.jsp" location="350,1150" dimension="120,53" />
+  <StrutsActivity path="/showUinfo.jsp" location="650,1150" dimension="118,53" />
+  <StrutsTransition id="/begRent.do,show,/qzindex.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1054,92" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/begRent.do,qiuzu,/userqz.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1054,134" />
+      <AbsolutePoint location="1054,195" />
+      <AbsolutePoint location="585,195" />
+      <AbsolutePoint location="585,574" />
+      <AbsolutePoint location="456,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/chooseRoom.do,show,/chooseroom.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="876,284" />
+      <AbsolutePoint location="1476,284" />
+      <AbsolutePoint location="1476,574" />
+      <AbsolutePoint location="1550,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/begRent.do,showinfo,/qzinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1054,92" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/begRent.do,showbr,/begRent.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1158,122" />
+      <AbsolutePoint location="1209,122" />
+      <AbsolutePoint location="1209,365" />
+      <AbsolutePoint location="1250,365" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/leaseRoom.do,info,/roomInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="471,334" />
+      <AbsolutePoint location="471,774" />
+      <AbsolutePoint location="650,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/users.do,update,update_pwd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="111,334" />
+      <AbsolutePoint location="111,414" />
+      <AbsolutePoint location="1312,414" />
+      <AbsolutePoint location="1312,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/leaseRoom.do,showroom,/showroom.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="460,292" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/leaseRoom.do,index,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="435,334" />
+      <AbsolutePoint location="435,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/leaseRoom.do,show,/room.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="501,334" />
+      <AbsolutePoint location="501,674" />
+      <AbsolutePoint location="650,674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/areaType.do,ok,/Areaht.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,92" />
+      <AbsolutePoint location="-25,92" />
+      <AbsolutePoint location="-25,474" />
+      <AbsolutePoint location="50,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/users.do,index,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="171,334" />
+      <AbsolutePoint location="171,474" />
+      <AbsolutePoint location="350,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/leaseRoom.do,update,/updateRoom.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="531,334" />
+      <AbsolutePoint location="531,513" />
+      <AbsolutePoint location="1015,513" />
+      <AbsolutePoint location="1015,550" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/houseType.do,show,/ShowHouse_type.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="760,134" />
+      <AbsolutePoint location="760,165" />
+      <AbsolutePoint location="5,165" />
+      <AbsolutePoint location="5,574" />
+      <AbsolutePoint location="50,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/actTable.do,showLessInfo,/actInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1050,1054" />
+      <AbsolutePoint location="1050,1076" />
+      <AbsolutePoint location="147,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/actTable.do,rep,/report.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1050,1002" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/begRent.do,up,/userupdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1158,92" />
+      <AbsolutePoint location="1603,92" />
+      <AbsolutePoint location="1603,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin.do,look,/SelAdmin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="448,50" />
+      <AbsolutePoint location="448,-25" />
+      <AbsolutePoint location="921,-25" />
+      <AbsolutePoint location="921,474" />
+      <AbsolutePoint location="768,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/users.do,showinof,/showUinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,262" />
+      <AbsolutePoint location="-175,262" />
+      <AbsolutePoint location="-175,1018" />
+      <AbsolutePoint location="709,1018" />
+      <AbsolutePoint location="709,1150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/areaType.do,isnu,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="261,134" />
+      <AbsolutePoint location="261,513" />
+      <AbsolutePoint location="400,513" />
+      <AbsolutePoint location="400,498" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin.do,login,/adminLogin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="448,92" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/users.do,login,/userLogin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="219,334" />
+      <AbsolutePoint location="219,774" />
+      <AbsolutePoint location="350,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/chooseRoom.jsp,null,/chooseRoom.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,674" />
+      <AbsolutePoint location="813,674" />
+      <AbsolutePoint location="813,334" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/usersInfo.do,user,/user.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1389,238" />
+      <AbsolutePoint location="1389,614" />
+      <AbsolutePoint location="697,614" />
+      <AbsolutePoint location="697,598" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/usersInfo.do,usersInfo,/userInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1340,194" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin.do,loginok,/htindex.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="448,134" />
+      <AbsolutePoint location="448,225" />
+      <AbsolutePoint location="1179,225" />
+      <AbsolutePoint location="1179,474" />
+      <AbsolutePoint location="1062,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/users.do,show,/showUsers.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,292" />
+      <AbsolutePoint location="-100,292" />
+      <AbsolutePoint location="-100,1176" />
+      <AbsolutePoint location="350,1176" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/users.do,showinfo,/showUinfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="148,292" />
+      <AbsolutePoint location="709,1176" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/users.do,usok,/user.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="141,334" />
+      <AbsolutePoint location="141,365" />
+      <AbsolutePoint location="615,365" />
+      <AbsolutePoint location="615,574" />
+      <AbsolutePoint location="650,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/leaseRoom.do,ok,/usercz.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,292" />
+      <AbsolutePoint location="309,292" />
+      <AbsolutePoint location="309,674" />
+      <AbsolutePoint location="156,674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

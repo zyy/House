@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr
+ PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+ "http://getahead.org/dwr/dwr20.dtd">
+<dwr>
+	<allow>
+		<create javascript="image" creator="new">
+			<param name="class"
+				value="server.impl.ImageTableServerImpl">
+			</param>
+		</create>
+		<create javascript="leaseRoom" creator="new">
+			<param name="class"
+				value="server.impl.LeaseRoomServerImpl">
+			</param>
+		</create>
+		<create javascript="croom" creator="new">
+			<param name="class"
+				value="server.impl.ChooseroomServerImpl">
+			</param>
+		</create>
+		<create javascript="admin" creator="new">
+			<param name="class" value="server.impl.AdminServerImpl"></param>
+		</create>
+		<create javascript="user" creator="new">
+			<param name="class" value="server.impl.UserServerImpl"></param>
+		</create>
+		<!-- 注册JavaBean -->
+		<convert converter="bean" match="entity.ImageTable"></convert>
+		<convert converter="bean" match="entity.ChooseRoom"></convert>
+		<convert converter="bean" match="entity.LeaseRoom"></convert>
+		<convert converter="bean" match="entity.HouseType"></convert>
+		<convert converter="bean" match="entity.AreaType"></convert>
+		<convert converter="bean" match="entity.Users"></convert>
+		<convert converter="bean" match="entity.Admin"></convert>
+		<convert converter="bean" match="entity.UsersInfo"></convert>
+	</allow>
+
+</dwr>
